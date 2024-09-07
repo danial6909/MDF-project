@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'B';
+    src: url("fonts/B\ Zar\ Bold_0.ttf");
+}
+
+@font-face {
+    font-family: 'l';
+    src: url("fonts/Dirooz.ttf");
+}
+
+body {
+    margin: 0;
+}
+
+.all {
+    background-image: url(images/hex-background-networking.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 742px;
+    position: fixed;
+    font-family: 'B'
+}
+
+.user_image {
+    max-width: 85px;
+    top: -43px;
+    position: absolute;
+}
+
+#image {
+    width: 85px;
+    height: 85px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto ;
+    margin-top: 150px;
+    border-radius: 10px;
+    background-color: rgba(47, 45, 45, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s ease;
+    border: 1px solid #00ffee;
+    box-shadow: 1px 3px 30px rgb(255, 255, 255);
+
+}
+
+.container:hover {
+    box-shadow: 1px 3px 70px rgb(255, 255, 255);
+    transform: scale(1.01);
+}
+
+.protect_inputs {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    font-size: 23pt;
+}
+
+.form-control {
+    position: relative;
+    width: 95%;
+}
+
+.form-control label {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    pointer-events: none;
+    font-size: 12pt;
+
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    outline: 0;
+    margin: 20px 0;
+    font-size: 14pt;
+    color: rgb(255, 255, 255);
+    background-color: rgba(47, 45, 45, 0);
+    border-bottom: 1px solid white;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+label>span {
+    color: beige;
+    display: inline-block;
+    transition: 0.3s cubic-bezier(0, 0, 0.26, 0.79);
+
+}
+
+.input:focus+label span,
+.input:valid+label span {
+    color: rgb(255, 0, 0);
+    transform: translateY(-30px);
+}
+
+/* .form-control input:focus,
+.form-control input:valid {
+    border-bottom-color: rgb(221, 255, 0);
+} */
+
+.input_submit {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    margin: 40px 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#btn {
+    width: 100%;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff;
+    transition: 0.4s ease;
+    margin-top: 30px;
+}
+
+#btn:hover {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+        0 0 100px #008cff;
+}
+
+#text {
+
+    color: rgb(244, 244, 244);
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}
+
+#link_password {
+    max-width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#link_register {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#link_password:hover,
+#link_register:hover {
+    color: #ff7300;
+    transform: scaleX(1.05);
+}
+
+.notif {
+    width: auto;
+    /* تغییر این قسمت به auto برای اندازه بهینه */
+    height: auto;
+    /* border-radius: 30% 5% 30% 5% / 5% 30% 5% 30%; */
+    border-radius: 10px;
+    padding: 5px;
+    position: fixed;
+    right: -350px;
+    top: 30px;
+    color: #000000;
+    background-color: rgba(27, 26, 26, 0.6);
+    border: 3px solid rgb(255, 0, 0);
+    box-shadow: 1px 1px 30px 1px cornsilk;
+    color: #ffffff;
+    font-family: 'l';
+    transition: all 0.5s ease;
+}
+
+.text_notif {
+    text-align: center;
+}
+
+.forget {
+    margin: 20px 0;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 350px) {
+    .notif {
+        font-size: 9pt;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.dark-mode {
+    background: #272727;
+    /* filter: invert(1) hue-rotate(210deg); */
+}
+
+.dark-mode .container {
+    background: #df3535;
+   
+}
+
+/* .dark-mode .container:hover {
+    box-shadow: 1px 3px 70px rgb(255, 255, 255);
+    transform: scale(1.01);
+} */
+
+/* .dark-mode .form-control input:focus,
+.dark-mode .form-control input:valid {
+    border-bottom-color: rgb(221, 255, 0);
+} */

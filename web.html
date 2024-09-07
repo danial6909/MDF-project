@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="web.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/photo_2024-02-09_15-43-21.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>My Website</title>
+  </head>
+
+  <body oncontextmenu="return false">
+
+    <div class="scrollbar"></div>
+    <div class="scrollbtn">
+      <i class="fa-solid fa-chevron-up" style="color: #ff0000; font-size: 18pt;"></i>
+    </div>
+
+    <div id="page">
+      <div id="contain">
+        <div id="ring"></div>
+        <div id="ring"></div>
+        <div id="ring"></div>
+        <div id="ring"></div>
+        <div id="h3">loading</div>
+      </div>
+    </div>
+
+    <div class="name">
+      <span class="name">Danial Kelidari</span>
+    </div>
+
+    <div class="head" >
+      <div class="icon"><i class="fa fa-bars"> </i></div>
+
+      <div class="head-center" >
+        <div class="box"><a class="link" href="#">Home</a></div>
+        <div class="box"><a class="link" href="#text-about">About</a></div>
+        <div class="box"><a class="link" href="#portfolio">Portfolio</a></div>
+        <div class="box"><a class="link" href="#contact">Contact</a></div>
+      </div>
+
+      <div class="head-right">
+        <div  onclick="op()" id="setting">
+          <img id="setting-image" src="images/settings.gif" alt="" />
+        </div>
+
+        <div class="protect_circle">
+          <div id="protect"></div>
+        </div>
+
+        <div class="circle">
+          <div class="item1" id="item1"></div>
+          <div onclick="dark()" class="item1" id="item2"></div>
+          <div class="item1" id="item3"></div>
+          <div class="item1" id="item4"></div>
+        </div>
+
+        <div id="login">
+          <a href="./login/login1.html" target="_blank">
+            <img id="login-image" src="images/user.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header"></div>
+
+    <section class="main">
+      <div id="text-about">
+        <span>About me</span>
+      </div>
+
+      <div class="about" id="about">
+        <div class="about-left">
+          <img
+            id="my-image"
+            src="images/photo_2024-02-09_15-43-21.jpg"
+            alt=""
+          />
+        </div>
+        <div class="about-right">
+          <h1 id="name">Danial kelidari</h1>
+          <h2 id="job">web developer and programming</h2>
+          <p id="text">
+            I have started to learn web design, I learned html and css and I
+            want to start javascript. My goal is to become a full stack
+            developer and I will be happy to use your experiences and if you
+            want I can help you with your projects as an intern. And thank you
+            for sharing your information with me😁❤️.
+          </p>
+          <div id="box-information">
+            <div class="protect">
+              <img class="email-image" src="images/new.png" alt="" />
+              <p id="email">Email:</p>
+              <a class="text" id="my-link" href="">wolfdan1382@gmail.com</a>
+            </div>
+
+            <div class="protect">
+              <img class="email-image" src="images/calendar.png" alt="" />
+              <p id="email">Birthday:</p>
+              <p class="text">6-Bahman-1382</p>
+            </div>
+
+            <div class="protect">
+              <img class="email-image" src="images/phone-call.png" alt="" />
+              <p id="email">Phone:</p>
+              <pre class="text">09381543140              </pre>
+            </div>
+
+            <div class="protect">
+              <img class="email-image" src="images/experience.png" alt="" />
+              <p id="email">Experience:</p>
+              <pre class="text">1 year        </pre>
+            </div>
+
+            <div class="protect">
+              <img class="email-image" src="images/placeholder.png" alt="" />
+              <p id="email">Residence:</p>
+              <pre class="text">Iran                   </pre>
+            </div>
+
+            <div class="protect">
+              <img class="email-image" src="images/translate.png" alt="" />
+              <p id="email">Language:</p>
+              <p class="text">persian</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <h1 class="h">skills</h1>
+        <div class="protect_child">
+          <div class="childs">
+            <p class="text3">Html</p>
+            <span class="darsad">90%</span>
+            <div class="line">
+              <div class="percent" id="p-1"></div>
+            </div>
+          </div>
+          <div class="childs">
+            <p class="text3">Css</p>
+            <span class="darsad">90%</span>
+            <div class="line">
+              <div class="percent" id="p-2"></div>
+            </div>
+          </div>
+          <div class="childs">
+            <p class="text3">Tailwind</p>
+            <span class="darsad">50%</span>
+            <div class="line">
+              <div class="percent" id="p-3"></div>
+            </div>
+          </div>
+          <div class="childs">
+            <p class="text3">Javascript</p>
+            <span class="darsad">60%</span>
+            <div class="line">
+              <div class="percent" id="p-4"></div>
+            </div>
+          </div>
+          <div class="childs">
+            <p class="text3">React</p>
+            <span class="darsad">0%</span>
+            <div class="line">
+              <div class="percent" id="p-5"></div>
+            </div>
+          </div>
+          <div class="childs">
+            <p class="text3">Node-Js</p>
+            <span class="darsad">0%</span>
+            <div class="line">
+              <div class="percent" id="p-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="portfolio" id="portfolio">
+      <div class="protect_port">
+        <h1 class="port">Portfolio</h1>
+        <div class="menu_port">
+          <a  class="project" id="all"
+            >All
+            <div class="line2"></div>
+          </a>
+          <div class="project" id ="project">
+            Projects
+            <div class="line2"></div>
+          </div>
+          <a class="project" id="practis"
+            >Practices
+            <div class="line2"></div>
+          </a>
+          <a  class="project" id="forms"
+            >Forms
+            <div class="line2"></div>
+          </a>
+          <a  class="project" id="input-port"
+            >Inputs
+            <div class="line2"></div>
+          </a>
+        </div>
+        <div class="pictures">
+          <div class="picture" id="image1">
+            <div class="card" id="im1">
+              <path
+                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+              ></path>
+              <div class="card__content">
+                <p class="card__title">Card Title</p>
+                <p class="card__description">
+                  minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="picture" id="image2">
+            <div class="card" id="im2">
+              <path
+                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+              ></path>
+              <div class="card__content">
+                <p class="card__title">Card Title</p>
+                <p class="card__description">
+                  minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="picture" id="image3">
+            <div class="card" id="im3">
+              <path
+                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+              ></path>
+              <div class="card__content">
+                <p class="card__title">Card Title</p>
+                <p class="card__description">
+                  minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="picture" id="image4">
+            <div class="card" id="im4">
+              <path
+                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+              ></path>
+              <div class="card__content">
+                <p class="card__title">Card Title</p>
+                <p class="card__description">
+                  minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="picture" id="image5">
+            <div class="card" id="im5">
+              <path
+                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+              ></path>
+              <div class="card__content">
+                <p class="card__title">Card Title</p>
+                <p class="card__description">
+                  minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="picture" id="image6">
+            <div class="card" id="im6">
+              <path
+                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+              ></path>
+              <div class="card__content">
+                <p class="card__title">Card Title</p>
+                <p class="card__description">
+                  minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="client">
+      <div class="protect-slider">
+        <div class="slider">
+          <div class="slider-box">
+            <i class="fa-solid fa-angles-left" id="left"></i>
+            <img src="./images/im7.png" alt="" class="slide-image active">
+            <img src="./images/im8.png" alt="" class="slide-image">
+            <img src="./images/im9.png" alt="" class="slide-image">
+            <i class="fa-solid fa-angles-right" id="right"></i>
+          </div>
+        </div>
+        <div class="control-slider">
+          <p onclick="dotchange(0)" class="circle-slider"></p>
+          <p onclick="dotchange(1)" class="circle-slider"></p>
+          <p onclick="dotchange(2)" class="circle-slider"></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="fotter" id="contact">
+      <div class="contact">
+        <h1 class="text-contact">contact</h1>
+        <div class="contact-box">
+          <div class="contact-left">
+            <div class="first">
+              <div class="input-group gg">
+                <input
+                  id="first-child"
+                  required=""
+                  type="text"
+                  name="text"
+                  autocomplete="off"
+                  class="input"
+                />
+                <label class="user-label">Name</label>
+              </div>
+              <div class="input-group gg">
+                <input
+                  required=""
+                  type="text"
+                  name="text"
+                  autocomplete="off"
+                  class="input"
+                />
+                <label class="user-label">Email</label>
+              </div>
+            </div>
+            <div class="input-group">
+              <input
+                required=""
+                type="text"
+                name="text"
+                autocomplete="off"
+                class="input"
+              />
+              <label class="user-label">Subject</label>
+            </div>
+            <div class="input-group">
+              <textarea name="" class="input" id="textarea"> </textarea>
+              <label class="user-label">Message</label>
+            </div>
+
+            <div class="input-send">
+              <a href="" class="buttom-send">
+                send
+                <span id="line-buttom"></span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <div class="info">
+              <div class="fl">
+                <i
+                  class="fa-solid fa-envelope icon-fot"
+                
+                ></i>
+                <div class="text-ab">
+                  <p class="tex">Email</p>
+                  <span class="value-tex">wolfdan1382@gmail.com</span>
+                </div>
+              </div>
+              <div class="fl">
+                <i
+                  class="fa-solid fa-phone icon-fot" 
+                 
+                ></i>
+                <div class="text-ab">
+                  <p class="tex">Phone</p>
+                  <span class="value-tex">+98 09381543140</span>
+                </div>
+              </div>
+              <div class="fl">
+                <i
+                  class="fa-solid fa-location-dot icon-fot"
+  
+                ></i>
+                <div class="text-ab">
+                  <p class="tex">Location</p>
+                  <span class="value-tex">Iran</span>
+                </div>
+              </div>
+            </div>
+            <div id="address">
+              <i class="fa-brands fa-telegram telegram"></i>
+              <i class="fa-brands fa-twitter telegram"></i>
+              <i class="fa-brands fa-linkedin telegram"></i>
+              <i class="fa-brands fa-facebook telegram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="text-copy">
+        Copyright © 2020 Template has been designed by Danial Kelidari.
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+      integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="web.js"></script>
+  </body>
+</html>

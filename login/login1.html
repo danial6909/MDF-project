@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login1.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="notif">
+            <p class="text_notif">یوزرنیم باید شامل حداقل 6 وپسورد 8 کاراکتر باشد</p>
+        </div>
+        <div class="container">
+            <div class="user_image">
+                <img id="image" src="images/user.png" alt="">
+            </div>
+            <h1 id="title">Login Here</h1>
+            <div class="protect_inputs">
+                <div class="form-control">
+                    <input onkeyup="usernamevalidation()" class="input" id="input1" type="text" required autofocus name="username" maxlength="6">
+                    <label>
+                        <span class="span1" style="transition-delay:0ms">U</span>
+                        <span class="span1" style="transition-delay:50ms">s</span>
+                        <span class="span1" style="transition-delay:100ms">e</span>
+                        <span class="span1" style="transition-delay:150ms">r</span>
+                        <span class="span1" style="transition-delay:200ms">n</span>
+                        <span class="span1" style="transition-delay:250ms">a</span>
+                        <span class="span1" style="transition-delay:300ms">m</span>
+                        <span class="span1" style="transition-delay:350ms">e</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <input onkeyup="passwordvalidation()" class="input" id="input2" type="password" required name="Password" maxlength="8">
+                    <label>
+                        <span class="span2" style="transition-delay:0ms">P</span>
+                        <span class="span2" style="transition-delay:50ms">a</span>
+                        <span class="span2" style="transition-delay:100ms">s</span>
+                        <span class="span2" style="transition-delay:150ms">s</span>
+                        <span class="span2" style="transition-delay:200ms">w</span>
+                        <span class="span2" style="transition-delay:250ms">o</span>
+                        <span class="span2" style="transition-delay:300ms">r</span>
+                        <span class="span2" style="transition-delay:350ms">d</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <input onclick="handleSubmit()" type="submit" id="btn" value="login"></input>
+                </div>
+                <div class="forget">
+                    <a id="link_password" href="">
+                        Forget Password
+                    </a>
+                    <a onclick="dark()" id="link_register" >
+                        Register
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./login1.js"></script>
+</body>
+
+</html>
