@@ -4,6 +4,7 @@ let header = document.querySelector(".head");
 let items = document.querySelectorAll(".link");
 let controlMenu = document.getElementById("control-menu");
 
+
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     header.classList.add("fix");
@@ -21,6 +22,7 @@ window.addEventListener("scroll", function () {
     });
   }
 });
+
 
 
 
