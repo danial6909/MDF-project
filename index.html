@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="scrollbar"></div>
+  <div id="control-menu"></div>
+  <header>
+    <div class="head">
+      <div class="menu">
+        <ul class="items">
+          <li class="item">
+            <a class="link" href="">صفحه اصلی</a>
+            <div class="line"></div>
+          </li>
+          <li class="item">
+            <a class="link" href="">محصولات</a>
+            <div class="line"></div>
+          </li>
+          <li class="item">
+            <a class="link" href="">نمونه کار ها</a>
+            <div class="line"></div>
+          </li>
+          <li class="item">
+            <a class="link" href="">درباره ما</a>
+            <div class="line"></div>
+          </li>
+          <li class="item">
+            <a class="link" href="">تماس با ما</a>
+            <div class="line"></div>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="brand"></div> -->
+      <div class="search">
+        <i id="icon-search" class="fa-solid fa-magnifying-glass"></i>
+        <div class="line-search"></div>
+        <input id="search" type="text" placeholder="جستجوی محصولات" />
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <div class="background"></div>
+    <div class="empty">
+      <!-- <p>محصولات ما</p> -->
+    </div>
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <div class="main">
+      <div class="container">
+        <div class="protect-slider">
+          <div class="slider">
+            <i class="fa-solid fa-angles-left" id="left"></i>
+
+            <div class="slider-box"><img src="./image/img1.jpg" alt="" class="img-slider"></div>
+            <div class="slider-box"><img src="./image/img2.jpg" alt="" class="img-slider"></div>
+            <div class="slider-box"><img src="./image/img3.jpg" alt="" class="img-slider"></div>
+            <div class="slider-box"><img src="./image/img4.jpg" alt="" class="img-slider"></div>
+            <div class="slider-box"><img src="./image/img5.jpg" alt="" class="img-slider"></div>
+
+            <i class="fa-solid fa-angles-right" id="right"></i>
+          </div>
+          <div class="control-slider">
+            <p onclick="dotchange(0)" class="circle-slider"></p>
+            <p onclick="dotchange(1)" class="circle-slider"></p>
+            <p onclick="dotchange(2)" class="circle-slider"></p>
+            <p onclick="dotchange(3)" class="circle-slider"></p>
+            <p onclick="dotchange(4)" class="circle-slider"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="container">
+        <h1 class="text-product">محصولات</h1>
+        <div class="product-box">
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img1.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img2.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img3.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img4.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img5.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img6.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img7.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img8.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img9.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img9.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img9.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="card-container">
+              <div class="card">
+                <img src="./image/img9.jpg" alt="" class="product-img">
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <div class="f"></div>
+  <div class="f"></div>
+  <div class="f"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <div class="d"></div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
